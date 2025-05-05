@@ -388,3 +388,15 @@ html, body {
   overflow-x: hidden;
   max-width: 100%;
 }
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add a media query to adjust for smaller screens, if needed */
+@media (max-width: 768px) {
+  .home .col-10.col-md-4 {
+    display: block; /* This makes the image appear on mobile */
+    text-align: center; /* Centers the image */
+  }
+}
