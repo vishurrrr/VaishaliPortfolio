@@ -393,10 +393,17 @@ img.img-fluid {
   height: auto;
 }
 
-/* Add a media query to adjust for smaller screens, if needed */
-@media (max-width: 768px) {
-  .home .col-10.col-md-4 {
-    display: block; /* This makes the image appear on mobile */
-    text-align: center; /* Centers the image */
+.carousel-item video {
+  width: 100%;
+  height: auto;
+  background-color: #000; /* To make the background black for videos */
+}
+
+/* For mobile devices, ensure proper sizing */
+@media (max-width: 767px) {
+  .carousel-item video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 }
